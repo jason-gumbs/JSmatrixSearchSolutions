@@ -1,3 +1,5 @@
+// Find the leftes number 1 in the matrix.
+
 let matrixArray = [
   [0,0,1,0,0],
   [0,0,1,1,1],
@@ -12,7 +14,6 @@ let data = 0
 
 let findLease = (arr) =>{
 for (let i = 0; i < arr.length; i++){
-  // console.log(matrixArray[i])
   let nestedArray = arr[i]
   for (let j = 0; j < nestedArray.length; j++){
     if(nestedArray[j] === 1){
@@ -22,16 +23,13 @@ for (let i = 0; i < arr.length; i++){
 
   }
 }
-// console.log(results)
 
  results.forEach((value,key,map) =>{ 
-  //  console.log(key)
      if(value < map.get(key + 1 )){
        data =  value
        }    
     })
         return data
-
 }
 
 let findings = findLease(matrixArray)
