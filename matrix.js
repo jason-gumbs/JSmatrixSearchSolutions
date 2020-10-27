@@ -17,10 +17,8 @@ for (let i = 0; i < arr.length; i++){
   let nestedArray = arr[i]
   for (let j = 0; j < nestedArray.length; j++){
     if(nestedArray[j] === 1){
-        results.set(i,j)
- 
+        results.set(i,j) 
     }
-
   }
 }
 
