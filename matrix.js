@@ -9,7 +9,7 @@ let matrixArray = [
 
 let results = new Map()
 let answer =  []
-let data = 0
+let data = null
 
 
 let findLease = (arr) =>{
